@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .container{
+            display: grid;
+            grid-template-columns: 400px;
+            grid-template-rows: 45px;
+            row-gap: 5px;
+           justify-content: center;
+           align-content: center;
+           background-color: white;
+           max-width: 60rem;
+           width: 50rem;
+           padding: 10px;
+           box-sizing: border-box;
+           border-radius: 10px;
+           box-shadow: 0px 0px 5px 5px blue;
+           letter-spacing: 0.1px;
+        }
+        label{
+            font-weight: 500;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        .ten{
+            width: 100px;
+            display: inline-block;
+            margin-top: 5px;
+        }
+        body{
+            display: flex;
+           justify-content: center;
+           align-content: center;
+           flex-wrap: wrap;
+            background-color: cornflowerblue;
+            margin-top: 30px;
+        }
+         input[type=tel] {
+        border: 0px;
+        outline: 0px;
+        border-bottom: 1px solid black;
+    }
+    input[type=gmail] {
+        border: 0px;
+        outline: 0px;
+        border-bottom: 1px solid black;
+    }
+    .one::after{
+        content: "*";
+        color: red;
+        font-size: 15px;
+    
+    }
+    .wrapper{
+        display: flex;
+    }
+    input[type=text]{
+        margin: 1px;
+    }
+    input[type=submit]{
+        color: white;
+        background-color: blue;
+        border: none;
+        border-radius: 5px;
+        padding: 5px 15px;
+        cursor: pointer;
+        transition: all 0.2s ease;
+    }
+    input[type=submit]:active{
+      transform:scale(0.96)
+    }
+    input[type=submit]:hover{
+      background-color: orangered;
+    }
+    textarea{
+        width: 450px;
+        height: 180px;
+        margin-left: 70px;
+        margin-top: -15px;
+    }
+    input[type=radio]{
+        margin-left: 50px;
+        cursor: pointer;
+    }
+    h2{
+        position: relative;
+        max-width: 500px;
+        margin: 40px auto;
+        text-align: center;
+    }
+    h2:before{
+        content: "";
+        height: 2px;
+        width: 130px;
+        background: black;
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 0;
+    }
+    h2:after{
+        content: "";
+        height: 2px;
+        width: 130px;
+        background: black;
+        display: block;
+        position: absolute;
+        top: 50%;
+        right: 0;
+    }
+    </style>
+</head>
+<body><form action="./2nd page.html">
+    <h2>Personal Details</h2>
+<div class="container">
+    <div class="wrapper">
+    <div>
+        <label class="one">first name:</label>
+        <input type="text" placeholder="first name" required>
+    </div>
+    <div>
+        <label>middle name:</label>
+        <input type="text" placeholder="middle name">
+    </div>
+    <div>
+        <label class="one">last name:</label>
+        <input type="text" placeholder="last name" required>
+    </div>
+    </div>
+    <div>
+        <label>Enter your date of birth:</label>
+        <input type="date" required>
+    </div>
+    <div>
+        <label>Enter your mobile number:</label>
+        <input type="tel" value="+91" required>
+    </div>
+    <div>
+        <label>Gmail:</label>
+        <input type="gmail" placeholder="example@gmail.com" required>
+    </div>
+    <div>
+        <label>Gender:</label><br>
+        <input type="radio" name="gender">male 
+        <input type="radio" name="gender">female 
+        <input type="radio" name="gender">others 
+    </div>
+    <div>
+        <label>upload your profile:</label>
+        <input type="file" required>
+    </div>
+    <div>
+        <label>Address:</label>
+        <textarea name="" id="" cols="28" row="8" required></textarea>
+    </div>
+    <div class="title">
+    <div>
+        <label class="ten">pin code:</label>
+        <input type="pin code" maxlength="6digits" required>
+    </div>
+    <div>
+        <label class="ten">Districts:</label>
+        <input list="Districts" id="states" required/>
+        <datalist id="Districts">
+         <option value="Visakhapatnam"/>
+         <option value="Anakapalli"/>
+         <option value="chittor"/>
+         <option value="Guntur"/>
+        </datalist>
+    </div>
+    <div>
+        <label class="ten">states:</label>
+        <input list="District" required/>
+        <datalist id="District">
+            <option value="Andhra pradesh"/>
+            <option value="Tamila naddu"/>
+            <option value="Utthar pradesh"/>
+            <option value="Telengana"/>
+        </datalist>
+    </div>
+    <div>
+        <label class="ten">countries:</label>
+        <input list="Countries" id="" required>
+<datalist id="Countries">
+    <option value="India"/>
+    <option value="America"/>
+    <option value="Africa"/>
+    <option value="US"/>
+</datalist>
+    </div>
+    </div>
+    <div>
+        <input type="checkbox" required>I here by declare above information is true 
+    </div>
+    <div>
+       <input type="submit">
+    </div>
+</div>
+</form>
+</body>
+</html>

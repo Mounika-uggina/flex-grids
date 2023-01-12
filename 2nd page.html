@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         .container{
+            display: grid;
+            grid-template-columns: 380px;
+            grid-template-rows: 30px;
+            row-gap: 15px;
+           justify-content: center;
+           align-content: center;
+           flex-wrap: wrap;
+           background-color: white;
+           width: 50rem;
+           padding: 10px;
+           box-sizing: border-box;
+           border-radius: 10px;
+           box-shadow: 0px 0px 5px 5px blue;
+        }   
+        body{
+            background-color: cornflowerblue;
+            display: flex;
+           justify-content: center;
+           align-content: center;
+           flex-wrap: wrap;
+            margin-top: 45px;
+        }
+        h2{
+        position: relative;
+        max-width: 500px;
+        margin: 40px auto;
+        text-align: center;
+    }
+    h2:before{
+        content: "";
+        height: 2px;
+        width: 130px;
+        background: black;
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 0;
+    }
+    h2:after{
+        content: "";
+        height: 2px;
+        width: 130px;
+        background: black;
+        display: block;
+        position: absolute;
+        top: 50%;
+        right: 0;
+    }
+    input[type=radio]{
+        margin-left: 50px;
+        cursor: pointer;
+    }
+    input[type=text] {
+    border: 0px;
+    outline: 0px;
+    border-bottom: 1px solid black;
+}
+input[type=submit]{
+    background-color: blue;
+    border: none;
+    border-radius: 2px;
+    transition: all 0.2s ease;
+    color: antiquewhite;
+}
+input[type=submit]:active{
+   transform: scale(0.96);
+}
+input[type=submit]:hover{
+    cursor: pointer;
+    color: white;
+    background-color: orangered;
+}
+input[type=file] {
+    margin-left: 200px;
+    margin-top: -15px;
+}
+    </style>
+</head>
+<body>
+    <form action="./3rd page.html">
+        <h2>Educational Details</h2>
+        <div class="container">
+            <div> <label for="">Hightest Educational Qualification:</label>
+                <select name="" id required="">
+                    <option value="">select</option>
+                    <option value="">10th</option>
+                    <option value="">Inter/Diploma</option>
+                    <option value="">Degree/B.Tech</option>
+                </select></div>
+                <div><label for="">Specialization:</label>
+                    <input list="specialization" required>
+                    <datalist id="specialization">
+                        <option value="Accounts"></option>
+                        <option value="Computer science"></option>
+                        <option value="Bussiness"></option>
+                        <option value="Mechanical"></option>
+                        <option value="Civil"></option>
+                    </datalist></div>
+                    <div> <label for="">College name:</label>
+                        <input type="text" required></div>
+                        <div> <label for="">Regd Number:</label>
+                            <input type="text" required></div>
+                            <div> <label for="">current states:</label><br>
+                                <input type="radio" name="current states" required>Pursuing</input>
+                                <input type="radio" name="current states" required>Compelted</input></div>
+                                <div> <label for="">Arrears:</label><br>
+                                    <input type="radio" name="Arrears" required>I never seen</input>
+            <input type="radio" name="Arrears" required>I clear my arrears</input></div>
+            <div> <label for="">Aggregate:</label>
+                <input type="percentage" min="50%" max="90%" required></div>
+                <div> <label for="">upload any other certification:</label>
+                    <input type="file"></div>
+                    <div>  <label for="">Do you have all original ceritificates:</label><br><br>
+                        <input type="radio" name="certification" required>yes</input>
+                        <input type="radio" name="certification" required>no</input></div>
+                        <div>  <input type="checkbox" required>I here by declare above information is true</div>
+                        <div> <input type="submit" value="click here to enroll the carres"></div>
+        </div>
+    </form>
+</body>
+</html>

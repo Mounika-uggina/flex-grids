@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+ *
+ {
+ padding: 0px;
+ margin: 0px;
+ }
+ .main
+ {
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items:center;
+ height: 100%;
+ }
+ .main_1
+ {
+ padding-top: 30px;
+ display: flex;
+ flex-direction: row;
+ column-gap: 5%;
+ }
+ .iframes_1,.iframes_2
+ {
+ display: flex;
+ flex-direction: column;
+ row-gap: 30px;
+ }
+ .iframes_2
+ {
+ display: flex;
+ flex-direction: column;
+ row-gap: 30px;
+ }
+ .main_2
+ {
+ padding-top: 10px;
+ display: flex;
+ flex-direction: column;
+ row-gap: 30px;
+ }
+ .main_3
+ {
+ padding-top: 30px;
+ display: flex;
+ flex-direction: row;
+ column-gap: 12px;
+ 
+ }
+ .sub1
+ {
+ display: flex;
+ flex-direction: column;
+ 
+ }
+ .pdf > iframe
+ {
+ width: 180px;
+ height: 120px;
+ }
+ .sub1 > iframe
+ {
+ width: 250px;
+ }
+ .box > input
+ {
+ width: 120px;
+ }
+ marquee
+ {
+ width: 100%;
+ background-color: red;
+ 
+ }
+ .main_4
+ {
+ padding-top: 30px;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ row-gap: 30px;
+ text-transform: capitalize;
+ }
+ .main_4 > .final_1
+ {
+ margin-top: 5px;
+ font-size: 20px;
+ }
+ .main_4 > .final_2 > input
+ {
+ width: 100px;
+ height: 30px;
+ font-size: 15px;
+ border-radius: 10px;
+ border: none;
+ background-color: red;
+ color: white;
+ }
+ .finale_2,input[type=button]:hover{
+    background: green;
+    cursor: pointer;
+ }
+ .gap
+ {
+ margin-top: 10px;
+ }
+ .main_main
+ {
+ padding: 0px 50px 10px 50px;
+ background-color:#fff;
+ border-radius: 10px;
+ box-shadow: 0px 0px 5px 5px blue;
+ margin-top: 10px;
+ height: 100%;
+ }
+ body{
+    background-color: cornflowerblue;
+ }
+    </style>
+</head>
+<body>
+<div class="main">
+ <marquee>THANK YOU FOR YOUR INTREST TO LEARN NEW SKILLS</marquee>
+ <div class="main_main">
+ <div class="main_1">
+ <div class="iframes_1">
+ <div class="label_1 box">
+ <label for="">COURCES OFFERED:</label>
+    <input list="languages" required>
+        <datalist id="languages">
+            <option value="HTML"></option>
+            <option value="CSS"></option>
+            <option value="JS"></option>
+            <option value="JAVA"></option>
+            <option value="REACT JS"></option>
+            <option value="PYTHON"></option>
+            <option value=".NET"></option>
+        </datalist>
+ </div>
+ <div class="label_2 box">
+ <label for="">PRICE OF COURCE:</label>
+    <select name="" id="" required>
+            <option value="">select</option>
+            <option value="">20,000 Rs</option>
+            <option value="">25,000 Rs</option>
+            <option value="">30,000 Rs</option>
+            <option value="">50,000 Rs</option>
+        </select>
+ </div>
+ <div class="label_3">
+ <label for="">ARE YOU COMFORT WITH:</label><br>
+ <input class="gap" type="radio">ONLINE<br>
+ <input class="gap" type="radio">OFFLINE
+ </div>
+ </div>
+ <div class="pdf">
+ <iframe src="https://www.youtube.com/embed/x9bTBcron78" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen"></iframe>
+ </div>
+ </div>
+ <div class="main_2">
+ <div class="sub2_1 box">
+ <label for="">SELECT YOUR COURCE DURATION:</label>
+     <select name="" id="">
+        <option value="">select</option>
+        <option value="">20,000</option>
+        <option value="">30,000</option>
+        <option value="">40,000</option>
+     </select>
+ </div>
+ <div class="sub2_1">
+ <label for="">DO YOU WANT PALCEMENT 
+ASSISTANCE:</label><br>
+ <input class="gap" type="radio">YES<br>
+ <input class="gap" type="radio">NO
+ </div>
+ </div>
+ <div class="main_3">
+ <div class="iframes_2">
+ <div class="pavan_1">
+ <label for="">ARE U WILLING TO RELOCATE:</label><br>
+ <input class="gap" type="radio">YES<br>
+ <input class="gap" type="radio">NO<br>
+ </div>
+ <div class="pavan_2">
+ <label>DO YOU WANT ONSITE:</label><br>
+ <input class="gap" type="radio">AGREE<br>
+ <input class="gap" type="radio">DISAGREE
+ </div> 
+ </div>
+ <div class="sub1">
+ <iframe src="./html_tutorial.pdf"></iframe>
+ </div>
+ </div>
+ <div class="main_4">
+ <div class="final_1">
+ <input type="checkbox">
+ <label for="">I am intrest to learn new skills</label>
+ </div>
+ <div class="final_2">
+ <input type="button" value="ENROLL">
+ </div>
+ </div>
+ </div>
+ </div>
+</body>
+</html>
